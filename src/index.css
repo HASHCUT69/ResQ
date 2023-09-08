@@ -1,0 +1,300 @@
+body {
+  background-image: url("bg.jpg");
+  font-family: "Lato","Avenir Next",Arial,sans-serif;
+  margin: 0;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  height:130px;
+  width:100%;
+  text-align: center;
+}
+
+.input1{
+  margin-top:50px;
+  padding:10px;
+  border-radius:5px;
+  border-color:white;
+  outline: none;
+  width: 300px;
+  font-size:medium;
+}
+.grid-container{
+  display:grid;
+  grid-template-columns:repeat(4,340px);
+  grid-auto-rows: 450px;
+  margin:5px;
+}
+.grid-container > div{
+  background-color: rgb(0, 0, 0);
+  margin:10px;
+  padding-top: 10px;
+  color:white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card {
+  border: none;
+}
+
+.overlay {
+  position:absolute;
+  z-index:1;
+}
+
+.centered{
+  margin-left: 610px;
+  margin-top: 12px;
+}
+
+.but1{
+  background-color: rgba(97, 64, 64, 0.607);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-left: 620px;
+  cursor: pointer;
+}
+
+.login {
+  color: white;
+  background:  #136a8a;
+  background: 
+    -webkit-linear-gradient(to right, #267871, #136a8a);
+  background: 
+    linear-gradient(to right, #267871, #136a8a);
+  margin: auto;
+  box-shadow: 
+    0px 2px 10px rgba(0,0,0,0.2), 
+    0px 10px 20px rgba(0,0,0,0.3), 
+    0px 30px 60px 1px rgba(0,0,0,0.5);
+  border-radius: 8px;
+  padding: 50px;
+}
+.contact{
+  color: white;
+  background:  #f7f7f7;
+  background: 
+    -webkit-linear-gradient(to right, #81e4dc, #99d9f1);
+  background: 
+    linear-gradient(to right, #83f6ecea, #a9e3f8);
+  margin: auto;
+  padding: 15px;
+}
+.contactuu{
+  background:  #f90303;
+  background: 
+    -webkit-linear-gradient(to right, #e03c0e, #ca8025);
+  background: 
+    linear-gradient(to right, #a86d54, #ff1d1d);
+}
+.login .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .head .company {
+  font-size: 2.2em;
+}
+.login .msg {
+  text-align: center;
+}
+.login .form input[type=text].text {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+}
+.login .form input[type=text].text1 {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.login .form input[type=text] {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 85%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.login .form .text::placeholder {
+  color: #D3D3D3;
+}
+.login .form .text1::placeholder {
+  color: #D3D3D3;
+}
+.login .form input[type=password] {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 85%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.login .form .password::placeholder {
+  color: #D3D3D3;
+}
+.input2{
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px white;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 20px;
+}
+.input2::placeholder {
+  color: #ffdfdf;
+}
+
+.but2{
+  background-color: rgba(142, 127, 127, 0.434);
+  border-radius: 8px;
+  border-width: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.but2:hover{
+  background-color: rgba(161, 156, 156, 0.726);
+}
+.Tabs{
+  list-style-type: none;
+}
+.tab1{
+  display: flex;
+  flex-direction: row;
+}
+.butrank{
+  background-color: rgba(142, 127, 127, 0.434);
+  border-radius: 8px;
+  border-width: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 7px 8px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.hoverdonor:hover{
+  cursor:pointer;
+}
+.select-container {
+  width: 245px;
+  position: relative;
+}
+
+/* Custom styles for the select element */
+select {
+  width: 100%;
+  padding: 6px;
+  font-size: 16px;
+  border: 1px solid #030303;
+  border-radius: 5px;
+  appearance: none; /* Remove default arrow in Chrome/Safari/Edge */
+  -webkit-appearance: none; /* Remove default arrow in Firefox */
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Custom styles for the arrow icon */
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the arrow doesn't interfere with clicking the select */
+  border-style: solid;
+  border-width: 6px 6px 0;
+  border-color: #999 transparent transparent transparent;
+}
+
+.pt1 {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgba(110, 110, 110, 0.648) 50%, rgba(0, 255, 162, 0.752) 50%);
+}
+
+.rating-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none; 
+}
+
+.input2::placeholder,
+textarea::placeholder {
+  color: black;
+}
