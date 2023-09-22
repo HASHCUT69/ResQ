@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGQ,gFAAwE;AAgBhF,OACA;EACC,OAAO,EAAE,GAAG;EACZ,gBAAgB,EAfN,OAAO;;ACHjB,wBACA;EACC,gBAAgB,EAAE,OAAO;EACzB,aAAa,EAAE,IAAI;EAOhB,kDACA;IACC,WAAW,EAAE,MAAM;EAEpB,sDACA;IACC,UAAU,EAAE,MAAM;EAWlB,kDACA;IACC,OAAO,EAAE,IAAI;IACb,MAAM,EAAE,IAAI;IACZ,aAAa,EAAE,GAAG",
-"sources": ["../../_props.scss","Subscription.scss"],
-"names": [],
-"file": "Subscription.css"
-}

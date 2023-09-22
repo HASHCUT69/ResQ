@@ -1,44 +1,49 @@
+import React, { useEffect, useState } from 'react'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom"
+import Home from './Components/Home'
+import Signup from './Components/Signup'
+import Hello from './Components/Hello'
+import Login from './Components/Login'
+import Donor from './Components/Donor'
+import { auth } from './Components/Firebase'
+import Rateus from './Components/Rateus'
+import Receiver from './Components/Receiver'
 
-import React, {Component} from 'react'
-import Header from './comps/header/Header'
-import Navbar from './comps/navbar/Navbar'
-import About from './comps/about/About'
-import Subscription from './comps/subscription/Subscription'
-import Products from './comps/products/Products'
-import Blogs from './comps/blogs/Blogs'
-import Faq from './comps/faq/Faq'
-import Contact from './comps/contact/Contact'
-import Footer from './comps/footer/Footer'
-import Sb from './comps/sb/Sb'
+const App = () => {
+  const [presentUser, setPresentUser] = useState(null);
+  useEffect(() => {
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        setPresentUser({
+          uid: user.uid,
+          email: user.email
+        })
+      }
+      else {
+        setPresentUser(null);
+      }
+    })
+  }, [])
+  return (
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Hello />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/rateus' element={<Rateus />} />
+          <Route path='/donor' element={<Donor presentUser={presentUser} />} />
+          <Route path='/receiver' element={<Receiver presentUser={presentUser} />} />
+          <Route path='/home' element={presentUser ? (<Home presentUser={presentUser} />) : <Login />} />
 
-class App extends Component
-{
-    render()
-    {
-        return(
-            <>
-                <Sb />
-                <div className = '_header'>
-                    <Header />
-                </div>
-
-                <Navbar />
-
-                <div className = '_body'>
-                    <About />
-                    <Subscription />
-                    <Products />
-                    <Blogs />
-                    <Faq />
-                    <Contact />
-                </div>
-
-                <div className = '_footer'>
-                    <Footer />
-                </div>
-            </>
-        )
-    }
+        </Routes>
+      </Router>
+    </div>
+  )
 }
 
-export default App;
+export default App
